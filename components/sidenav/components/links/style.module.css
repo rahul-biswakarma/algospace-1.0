@@ -1,0 +1,16 @@
+.Container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.8rem 1.5rem;
+}
+
+.singleAlgoLinks {
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 17px;
+}

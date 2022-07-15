@@ -1,0 +1,147 @@
+.TohVisualizerC {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: var(--toh-visualizer-height);
+  column-gap: 20px;
+  padding: 0 20px;
+}
+
+.TowerC {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.TowerC::before {
+  content: "";
+  width: var(--tower-base-height);
+  height: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -3px;
+}
+
+.TowerC:nth-child(1) {
+  border-bottom: var(--tower-base-height) solid var(--blue-grey);
+}
+
+.TowerC:nth-child(1)::before {
+  background: var(--blue-grey);
+}
+
+.TowerC:nth-child(2) {
+  border-bottom: var(--tower-base-height) solid var(--blue-grey);
+}
+
+.TowerC:nth-child(2)::before {
+  background: var(--blue-grey);
+}
+
+.TowerC:nth-child(3) {
+  border-bottom: var(--tower-base-height) solid var(--blue-grey);
+}
+
+.TowerC:nth-child(3)::before {
+  background: var(--blue-grey);
+}
+
+.SortingTerminalC {
+  padding: 3rem 50px;
+  background-color: var(--bg-blue);
+  border-bottom: 1px solid var(--bg-blue-2);
+  transition: all 150ms ease-out;
+}
+
+.TerminalHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  color: var(--text);
+  text-decoration: underline;
+  transition: all 150ms ease-out;
+}
+
+.SortingTerminal {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  transition: all 150ms ease-out;
+}
+
+.ColorPurple {
+  color: var(--purple);
+}
+
+.ColorText {
+  color: var(--text);
+}
+
+.ColorOrange {
+  color: var(--orange);
+}
+
+.ColorBlue {
+  color: var(--blue);
+}
+
+.FlexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.OptionsHeaderC {
+  width: 100%;
+  height: var(--option-header-height);
+  display: grid;
+  grid-template-columns:
+    auto var(--option-header-height) var(--option-header-height)
+    var(--option-header-height);
+  background-color: var(--bg-blue);
+  border-top: 1px solid var(--bg-blue-2);
+  border-bottom: 1px solid var(--bg-blue-2);
+}
+
+.OptionHeaderIconsC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid var(--bg-blue-2);
+  color: var(--bg-blue-2);
+  transform: all 150ms ease-out;
+}
+
+.OptionHeaderIconsC svg {
+  transform: all 150ms ease-out;
+}
+
+.OptionHeaderIconsC:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.OptionHeaderTitle {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.CodePreTag {
+  white-space: pre-wrap;
+  background: var(--bg-blue);
+  padding: 50px;
+  border-bottom: 1px solid var(--bg-blue-2);
+}

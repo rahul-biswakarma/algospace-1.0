@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Sorting",
+    "id": "sorting",
+    "algorithms": [
+      { "id": "bubble-sort", "name": "Bubble Sort", "funcname": "BubbleSort" },
+      {
+        "id": "selection-sort",
+        "name": "Selection Sort",
+        "funcname": "SelectionSort"
+      },
+      { "id": "merge-sort", "name": "Merge Sort", "funcname": "MergeSort" }
+    ]
+  }
+]
